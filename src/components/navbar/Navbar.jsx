@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {categoriesId, getCategories, getCategoriesData} from "../../redux/categories/categories.action";
 import {Link} from "react-router-dom";
 
-const Navbar = ({categories, limit, dispatch}) => {
+const Navbar = ({categories, dispatch}) => {
 
     useEffect(() => {
         dispatch(getCategoriesData(`https://api.thecatapi.com/v1/images/search?limit=10&page=1`))
@@ -33,8 +33,7 @@ const Navbar = ({categories, limit, dispatch}) => {
 
 const mapStateToProps = (state) => {
     return {
-        categories: state.categories,
-        limit: state.categories.limit
+        categories: state.categories
     }
 }
 const mapDispatchToProps = (dispatch) => {

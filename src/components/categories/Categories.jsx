@@ -7,7 +7,7 @@ const Categories = (props) => {
     const learnMore = (e) => {
         let page = 1
         if (props.id === 0){
-            props.dispatch(getLearnMore(`https://api.thecatapi.com/v1/images/search?limit=10&page=${page + 1}`))
+            props.dispatch(getLearnMore(`https://api.thecatapi.com/v1/images/search?limit=10&page=${page + 1}ls`))
         }else{
             props.dispatch(getLearnMore(`https://api.thecatapi.com/v1/images/search?limit=10&page=${page + 1}&category_ids=${props.id}`))
         }
