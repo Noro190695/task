@@ -1,0 +1,23 @@
+.navbar{
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  border-right: 1px solid silver;
+
+  ul{
+    li{
+      margin: 15px 0px;
+      font-size: 18px ;
+      a{
+        color: #727272;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: .3s;
+        &:hover{
+          background-color: #c4c4c4;
+        }
+      }
+
+    }
+  }
+}
